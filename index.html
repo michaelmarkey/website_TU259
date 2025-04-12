@@ -13,25 +13,27 @@
 
     <header>
         <nav class="navbar">
-          <div class="signature">
-            <h1>Michael Markey</h1> <!-- To be updated later -->
+          <div class="navbar-container">
+            <div class="signature">
+              <h1>Michael Markey</h1> <!-- To be updated later -->
+            </div>
+    
+            <!-- Hamburger Button -->
+            <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+              <!-- You can style these spans to form a hamburger later -->
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+    
+            <!-- Menu Items -->
+            <ul class="menu">
+              <li><a href="current.html">Current</a></li>
+              <li><a href="background.html">Background</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Get in Touch</a></li>
+            </ul>
           </div>
-    
-          <!-- Hamburger Button -->
-          <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
-            <!-- You can style these spans to form a hamburger later -->
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </button>
-    
-          <!-- Menu Items -->
-          <ul class="menu">
-            <li><a href="current.html">Current</a></li>
-            <li><a href="background.html">Background</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Get in Touch</a></li>
-          </ul>
         </nav>
     </header>
 
@@ -40,18 +42,16 @@
     <main>
         <section class="intro-section">
             <div class="intro-text">
-                <h1>A working version of my professional journey</h2>
+                <h1>A working version of my professional journey</h1>
                 <p>Past projects, current focus, future intent</p>
             </div>
             <div class="intro-image" id="imageCV">
                 <img src="CV PHOTO.png" alt="Main personal image" width="150" height="150">
             </div>    
         </section>
-
-        <section >
             
-        </section class="two-column-section">
-        <div id="transition" class="info-block left-block">
+        <section class="two-column-section">
+          <div id="transition" class="info-block left-block">
             <h2>A transition to Tech</h2>
             <p>I talk here about how I landed in IT</p>
           </div>
@@ -62,24 +62,28 @@
           </div>
         </section>
       
-        <section id="over_the_years">
-            <h2>Over the Years</h2>
+        <section class="experience-section">
+          <div class="over_the_years_text">
+            <h1>Over the Years</h1>
             <p>I detail here my professional experience</p>
-        </section>
-      
-        <section id="wordcloud">
+          </div>
+          <div class="over_the_years_image" id="wordcloud">
             <img src="WORD CLOUD NEW.png" alt="Wordcloud of professional experience" width="150" height="150">
+          </div>    
         </section>
 
-        <section id="been">
+        <section class="two-column-section">
+          <div id="been" class="info-block left-block">
             <h2>Where I've been</h2>
             <p>I talk here about where I've lived and what I've done there</p>
-        </section>
+          </div>
 
-        <section id="going">
+          <div id="going" class="info-block right-block">
             <h2>Where I'm going</h2>
             <p>I talk here about what my plans for the future are</p>
+          </div>
         </section>
+
 
         <section id="contact">
             <h2>Get in Touch</h2>

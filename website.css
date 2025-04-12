@@ -1,12 +1,21 @@
 /* ===== MOBILE FIRST (default) ===== */
 
 .navbar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background-color: #f8f8f8;
     position: relative;
+  }
+
+  .navbar-container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   
   /* Signature on the left */
@@ -61,7 +70,8 @@
   }
 
   /* Container for the text and image */
-.intro-section {
+  .intro-section {
+    background-color: #e6f9e6;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +104,7 @@
   }
 
   /* Container for the two sections */
-.two-column-section {
+  .two-column-section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -156,10 +166,10 @@
         text-align: center;
         background-color: #e6f9e6; /* Light green, like intro */
         border: 2px solid #ccc;
-        padding: 2rem 50px;
+        padding: 2rem;
         border-radius: 8px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-        margin: 0 100px 40px;
+        /* margin: 0 100px 40px; */
       }
       
       .contact-form {
@@ -173,7 +183,7 @@
       .contact-form input,
       .contact-form textarea {
         width: 100%;
-        max-width: 500px;
+        max-width: 500px; 
         padding: 0.75rem;
         border: 1px solid #ccc;
         border-radius: 6px;
@@ -271,52 +281,157 @@
   /* ===== DESKTOP VIEW ===== */
   @media (min-width: 768px) {
     .menu-toggle {
-      display: none; /* Hide hamburger on desktop */
+      display: none;
+    }
+  
+    .navbar {
+      padding: 1rem 1rem;
+      width: 100%;
+      background-color: #666;
+    }
+  
+    .navbar-container {
+      margin-left: 4rem;
+      margin-right: 4rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* ✅ fixed */
+    }
+  
+    .signature {
+      flex-shrink: 0;
+      white-space: nowrap;
+      padding-left: 0;
+      margin-left: 0;
+    }
+  
+    .signature h1 {
+      line-height: 1;
+      margin: 0;
+      padding: 0;
     }
   
     .menu {
       display: flex !important;
       position: static;
       flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
       gap: 2rem;
       background: none;
       box-shadow: none;
       padding: 0;
     }
+    
+    .menu li a {
+      white-space: nowrap;
+    }
   
     /* Intro section layout */
     .intro-section {
+      width: 100%;
+      height: 400px;
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      padding: 0 0;
+      gap: 2rem;
     }
   
     .intro-text {
-      flex: 2;
-      padding-right: 2rem;
+      margin-left: 4rem;
+      flex: 1 1 70%;
+      text-align: left;
     }
   
     .intro-image {
-      flex: 1;
+      margin-right: 4rem;
+      flex: 1 1 30%;
       display: flex;
       justify-content: center;
+      padding: 2rem 0;
     }
+
+    .intro-image img {
+      max-width: 100%;
+      height: 300px;
+      width: 300px;
+      border-radius: 8px;
+    }
+
+    
   
     /* Two-column layout */
     .two-column-section {
+      background-color: goldenrod;
       flex-direction: row;
-      justify-content: space-between;
+      display: flex;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      height: 400px;
     }
   
     .left-block,
     .right-block {
-      width: 48%;
+      flex: 1 1 50%;
+    }
+
+    #transition,
+    #current_projects {
+      margin: 0;
     }
   
-    .left-block {
-      transform: translateY(-50px);
+
+    /* Section about experience */
+    .experience-section {
+      background-color: #4CAF50;
+      width: 100%;
+      height: 400px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 0;
+      gap: 2rem;
+      }
+
+    .over_the_years_text {
+      margin-left: 4rem;
+      flex: 1 1 70%;
+      text-align: left;
+      padding-left: 2rem;
+      
+    }
+
+    .over_the_years_text h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .over_the_years_text p {
+      font-size: 1.1rem;
+      line-height: 1.5;
     }
   
+    .over_the_years_image {
+      margin-right: 4rem;
+      flex: 1 1 30%;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .over_the_years_image img {
+      max-width: 100%;
+      height: 300px;
+      width: 300px;
+      border-radius: 8px;
+    }
+
+
+
     /* Wordcloud: center the image and increase size */
     #wordcloud img {
       max-width: 100%;
@@ -326,10 +441,58 @@
     /* Contact form fields larger on desktop */
     .contact-form input,
     .contact-form textarea {
-      max-width: 600px;
+      width: 100%;
+      max-width: 100%;
     }
   
-    /* Optional: center footer elements more cleanly */
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+      margin-top: 0;
+      background: none;
+      color: #333;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; /* allows wrap on smaller screens */
+      padding: 1rem 4rem;
+      background-color: #f8f8f8;
+    }
+    
+    .footer-links ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .footer-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    
+    .footer-socials {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .footer-socials a {
+      font-size: 1.5rem;
+      color: #333;
+    }
+    
+    .footer-copy {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Optional: center footer elements more cleanly 
     .footer-links ul {
       justify-content: center;
     }
@@ -345,7 +508,7 @@
   
     .footer-copy {
       font-size: 1rem;
-    }
+    } */
   }
   
 
