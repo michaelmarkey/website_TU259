@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website V1</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+
+    <header>
+        <nav class="navbar">
+          <div class="signature">
+            <h1>Michael Markey</h1> <!-- To be updated later -->
+          </div>
+    
+          <!-- Hamburger Button -->
+          <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+            <!-- You can style these spans to form a hamburger later -->
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+    
+          <!-- Menu Items -->
+          <ul class="menu">
+            <li><a href="current.html">Current</a></li>
+            <li><a href="background.html">Background</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Get in Touch</a></li>
+          </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <section class="intro-section">
+            <div class="intro-text">
+                <h1>A working version of my professional journey</h2>
+                <p>Past projects, current focus, future intent</p>
+            </div>
+            <div class="intro-image" id="imageCV">
+                <img src="CV PHOTO.png" alt="Main personal image" width="150" height="150">
+            </div>    
+        </section>
+
+        <section >
+            
+        </section class="two-column-section">
+        <div id="transition" class="info-block left-block">
+            <h2>A transition to Tech</h2>
+            <p>I talk here about how I landed in IT</p>
+          </div>
+
+          <div id="current_projects" class="info-block right-block">
+            <h2>Current Projects</h2>
+            <p>I talk here about the projects I am currently working on</p>
+          </div>
+        </section>
+      
+        <section id="over_the_years">
+            <h2>Over the Years</h2>
+            <p>I detail here my professional experience</p>
+        </section>
+      
+        <section id="wordcloud">
+            <img src="WORD CLOUD NEW.png" alt="Wordcloud of professional experience" width="150" height="150">
+        </section>
+
+        <section id="been">
+            <h2>Where I've been</h2>
+            <p>I talk here about where I've lived and what I've done there</p>
+        </section>
+
+        <section id="going">
+            <h2>Where I'm going</h2>
+            <p>I talk here about what my plans for the future are</p>
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form class="contact-form" action="#" method="post">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+              <button type="submit">Send</button>
+            </form>
+        </section>
+    
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="current.html">Current</a></li>
+              <li><a href="background.html">Background</a></li>
+              <li><a href="contact.html">Get in Touch</a></li>
+            </ul>
+          </div>
+      
+          <!-- 40px gap above socials is handled in CSS -->
+          <div class="footer-socials">
+            <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <!-- Add more as needed -->
+          </div>
+      
+          <div class="footer-copy">
+            <p>&copy; 2025 Michael Markey. All rights reserved.</p>
+          </div>
+        </div>
+    </footer>
+
+
+    <script src="website.js"></script>
+  </body>
+</html>
