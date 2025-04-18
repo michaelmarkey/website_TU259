@@ -209,6 +209,22 @@ a:hover {
   padding-right: 2rem;
 }
 
+.learn-more-tag {
+  display: inline-block;
+  color: #4CAF50;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.learn-more-tag:hover {
+  color: #388E3C;
+  text-decoration: underline;
+}
+
+
 /* Generic section that contains a block with information on a topic */
 /* Used for Transition to Tech, Current projects, Where I've been
 and Where I'm going */
@@ -218,22 +234,32 @@ and Where I'm going */
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 400px;
+  height: 500px;
   padding: 2rem 1rem;
   background-color: #f4f4f4;
 
 }
 
-.info-block {
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid #ccc; 
-  padding: 2rem; 
-  background-color: #fff; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  max-width: 100%; 
+.info-row {
+  display: flex;
+  flex-direction: column; /* Stack by default */
+  justify-content: center; /* Centers the blocks horizontally */
+  gap: 2rem; /* Adds space between the blocks */
 }
+
+.info-block {
+  margin: 4rem; /* Centers the block horizontally */
+  text-align: left;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px; /* Adjust this value to make the blocks smaller */
+  max-height: 300px;
+  border: 4px solid #ccc; /* Border around the text */
+  padding: 2rem; /* Padding inside the border */
+  padding-bottom: 7rem;
+}
+
 
 .info-block h2 {
   font-size: 1.5rem;
@@ -351,11 +377,17 @@ footer {
 
 
 #transition {
-  background-color: #e0f2ff;
+  padding-bottom: 125px;
+  /* background-color: #e0f2ff; */
 }
 
 #current-projects {
-  background-color: #fcecc9;
+  padding-bottom: 125px;
+  /* background-color: #fcecc9; */
+} */
+
+#transition, #current-projects {
+  background-color: #f4f4f4; /* Light grey background */
 }
 
 #wordcloud_img {
@@ -504,13 +536,29 @@ footer {
   .info-section-current_projects,
   .info-section-where_ive_been,
   .info-section-where_im_going {
-    padding: 4rem;
-    height: 400px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .info-row {
+    flex-direction: row; /* Side by side */
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  
+  .info-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* gap: 2rem; Optional spacing between columns */
+    flex-wrap: wrap; /* Optional: allow wrapping on smaller screens */
+    /* padding: 2rem; */
   }
 
   .info-block {
     max-width: 800px;
-    padding: 3rem;
+    /* padding: 3rem; */
     font-size: 1.1rem;
   }
 
