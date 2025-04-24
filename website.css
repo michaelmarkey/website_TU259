@@ -273,8 +273,9 @@ a:hover {
   flex-wrap: wrap;
   flex-direction: column; /* Stack by default */
   justify-content: center; /* Centers the blocks horizontally */
-  max-width: 1200px;
-  margin: 2rem;
+  width: auto;
+  margin: 0;
+  padding: 0 1rem; */
   box-sizing: border-box;
   gap: 2rem; /* Adds space between the blocks */
 }
@@ -289,6 +290,7 @@ a:hover {
   height: auto;
   padding: 1.5rem;
   background-color: #ffffff;
+  width: auto;
 }
 
 .info-block {
@@ -298,11 +300,11 @@ a:hover {
   border-radius: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 2rem; /* Padding inside the border */
-  width : auto;
+  width : auto%;
   box-sizing: border-box;
   word-wrap: break-word;
   text-align: left;
-  
+  display: block;
 }
 
 .info-block h2 {
