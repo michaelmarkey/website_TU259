@@ -12,28 +12,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-
-
-
   </head>
+  
   <body>
     <div class="page-wrapper">
       <header>
         <div class="navbar">
           <div class="navbar-container">
-            
+            <!-- Signature top left -->
             <div class="signature">
               <h1>Michael Markey</h1> 
             </div>
-      
-            <!-- Hamburger Button -->
+            <!-- Hamburger Button - hidden on larger screens -->
             <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="main-menu">
-              <!-- You can style these spans to form a hamburger later -->
               <span class="bar"></span>
               <span class="bar"></span>
               <span class="bar"></span>
             </button>
-      
             <!-- Menu Items -->
             <ul class="menu" id="main-menu">
               <li><a href="current.html">Current</a></li>
@@ -41,97 +36,109 @@
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Get in Touch</a></li>
             </ul>
-          
           </div>
         </div>
       </header>
 
       <main>
+        <!-- Top section - text plus image -->
+        <section class="text-plus-image">
+          <div class="description" id="hero-text">
+            <h1>A working version of my professional journey</h1>
+            <p>Past projects, current focus, future intent</p>
+          </div>
+          <div class="illustration" id="image-CV">
+            <img src="CV_PHOTO.png" alt="Professional headshot">
+          </div>    
+        </section>
         
-          <section class="text-plus-image-intro">
-              <div class="text-on-top" id="hero-text">
-                  <h1>A working version of my professional journey</h1>
-                  <p>Past projects, current focus, future intent</p>
-              </div>
-              <div class="image-down-below" id="image-CV">
-                  <img src="CV_PHOTO.png" alt="Professional headshot" width="150" height="150">
-              </div>    
-          </section>
-          
-          <div class="info-row">
-          <section class="info-section-transition" id="transition">
+        <!-- Section with two text boxes about my current professional life -->
+         <!-- Wrap both parts in a row on larger screens, columns on smaller screens -->
+        <div class="info-row"> 
+          <!-- First part of the row - first column on smaller screens -->
+          <section class="info-section-transition" id="transition"> 
             <div class="info-block">
               <h2>A transition to Tech</h2>
               <p>I’m currently retraining in software development after two decades in education and research. 
                 I’m learning modern frameworks, building projects, and applying problem-solving skills from my academic background. 
                 I’m also exploring where I can add value — whether in frontend development, UX, or tech-focused communication. 
-                It’s a shift, but one I’m fully engaged in.</p>
-                <span class="learn-more-tag">→ Learn more</span>
+                </p>
+              <span class="learn-more-tag">→ Learn more</span>
             </div>
           </section>
-        
-        
-          <section class="info-section-current_projects" id="current-projects">
+          <!-- Second part of the row or second column on smaller screens -->
+          <section class="info-section-current_projects" id="current-projects"> 
             <div class="info-block">
               <h2>Current Projects</h2>
               <p>I'm currently working on several projects to apply and expand my software development skills. 
                 These include building a responsive portfolio website, developing a JavaScript-based weather app, 
                 and contributing to an open-source documentation tool. 
-                I'm also exploring areas like accessibility and content strategy to enhance 
-                the usability and clarity of my work.</p>
-                <span class="learn-more-tag">→ Learn more</span>
+                I'm also exploring areas like accessibility and content strategy </p>
+              <span class="learn-more-tag">→ Learn more</span>
             </div>
           </section>
         </div>
 
-        <section class="text-plus-image-experience">
-          <div class="text-on-top" id="over-the-years">
-            <h1>Over the Years</h1>
+        <!-- Same layout as top section - text plus image - but different padding top and bottom -->
+        <section class="text-plus-image experience-section">
+          <div class="description" id="over-the-years">
+            <h1>What I've done over the past twenty years</h1>
             <p>I detail here my professional experience</p>
           </div>
-          <div class="image-down-below" id="wordcloud">
-            <img src="WORD_CLOUD_NEW.png" alt="Wordcloud representing professional experience" width="150" height="150">
+          <div class="illustration" id="wordcloud-image">
+            <img src="WORD_CLOUD_NEW.png" alt="Wordcloud representing professional experience">
           </div>      
         </section>
         
-        <section class="info-section-where_ive_been" id="where-ive-been">
-          <div class="info-block">
-            <h2>Where I've been</h2>
-            <p>I talk here about where I've lived and what I've done there</p>
-          </div>
-        </section>
-        
-        <section class="info-section-where_im_going" id="where-im-going">
-          <div class="info-block">
-            <h2>Where I'm going</h2>
-            <p>I talk here about what my plans for the future are</p>
-          </div>
-        </section>
+        <!-- Same as before - section with two text boxes, this time about my professional experience -->
+        <div class="info-row">
+          <!-- First part of the row - first column on smaller screens -->
+          <section class="info-section-where_ive_been" id="where-ive-been">
+            <div class="info-block">
+              <h2>Where I've been</h2>
+              <p>My professional journey began in academia, where I taught, researched, and published in linguistics. 
+                Over two decades, I worked across institutions, building strong communication, analysis, and collaboration skills. 
+                I thrived in roles that combined intellectual curiosity with real-world impact.</p>
+              <span class="learn-more-tag">→ Learn more</span>
+            </div>
+          </section>
+          <!-- Second part of the row or second column on smaller screens -->
+          <section class="info-section-where_im_going" id="where-im-going">
+            <div class="info-block">
+              <h2>Where I'm going</h2>
+              <p>I’m transitioning into tech to build tools, platforms, and products that improve knowledge. 
+                I’m drawn to frontend development, UX, and developer advocacy—spaces where my growing technical skills apply. 
+                Long term, I hope to work with teams that value thoughtful design and inclusive content.</p>
+              <span class="learn-more-tag">→ Learn more</span>
+            </div>
+          </section>
+        </div>
 
+        <!-- Contact section with a form to get in touch -->
         <section id="contact">
           <div class="contact-wrapper">
             <h2>Get in Touch</h2>
+            <!-- Method for Javascript -->
             <form class="contact-form" action="#" method="post">
+              <!-- Name -->
               <label for="name" class="visually-hidden">Name</label>
               <input id="name" type="text" name="name" placeholder="Your Name" required>
-            
+              <!-- Email -->
               <label for="email" class="visually-hidden">Email</label>
               <input id="email" type="email" name="email" placeholder="Your Email" required>
-            
+              <!-- Message Box -->
               <label for="message" class="visually-hidden">Message</label>
               <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-            
+              <!-- Submit button -->
               <button type="submit">Send</button>
             </form>
           </div>
         </section>
-      
-      
       </main>
 
       <footer>
         <div class="footer-container">
-          
+          <!-- Quick links -->
           <div class="footer-links">
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -140,8 +147,7 @@
               <li><a href="contact.html">Get in Touch</a></li>
             </ul>
           </div>
-        
-          <!-- 40px gap above socials is handled in CSS -->
+          <!-- Socials -->
           <div class="footer-socials">
             <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <i class="fab fa-twitter"></i>
@@ -152,19 +158,17 @@
             <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <i class="fab fa-instagram"></i>
             </a>
-            <!-- Add more as needed -->
           </div>
-        
+          <!-- Copyright -->
           <div class="footer-copy">
-              <p>&copy; 2025 Michael Markey. All rights reserved.</p>
-            </div>
+            <p>&copy; 2025 Michael Markey. All rights reserved.</p>
           </div>
-          
         </div>
       </footer>
 
-
+      <!-- Link to Javascript file -->
       <script src="website.js"></script>
-    </div>
+    
+    </div> <!-- Close Page wrapper - Max 1200px for larger screens -->
   </body>
 </html>
