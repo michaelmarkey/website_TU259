@@ -181,21 +181,53 @@ a:hover {
 
   
 /* Generic container for text and image together */
-/* Used for Intro + photo, Experience + wordcloud */ 
+/* Specific Divs for individual page to control height and backgroudn colour */ 
 
 .text-plus-image {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #6b877e;
+  width: auto;
+}
+
+.hero-homepage-settings {
   height: auto;
+  background-color: #6b877e;
   margin-top: 1rem; 
   border-radius: 16px;
 }
 
+.hero-current-settings {
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: #6b877e;
+  margin-top: 1rem; 
+  border-radius: 16px;
+}
+
+.hero-background-settings {
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: #8a7e4d;
+  margin-top: 1rem; 
+  border-radius: 16px;
+}
+
+.hero-about-settings {
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: #c79a4a;
+  margin-top: 1rem; 
+  border-radius: 16px;
+}
+
+/* Settings for text plus image inside hero sections */
+
 .description {
-  /* background-color: transparent;  */
   margin-top: 1rem;
   padding: 0 2rem;
   text-align: center;
@@ -216,43 +248,15 @@ a:hover {
   margin-top: auto;
   display: flex;
   justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  /* align-items: center; Center vertically */
 }
 
 /* Ensures there is no space under the image */
 /* Remove any potential margin on the image */
-.illustration img {
+ .illustration img {
   display: block; 
   max-width: 100%;
-}
-
-.experience-section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  padding-bottom: 3rem;
-  padding-top:  2rem; /* Only affects this specific section */
-}
-
-#wordcloud-image img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-#map-Lille-plus {
-  width: auto;
-  height: auto;
-  border-radius: 12px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-#map-Lille-plus img {
-  border-radius: 12px;
-}
-
+} 
 
 .text-plus-image .illustration {
   /* prevent flex from squishing the box */
@@ -346,6 +350,45 @@ a:hover {
   line-height: 1.6;
   color: #2c2c2c;
 }
+
+
+
+
+
+
+
+
+
+.experience-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 3rem;
+  padding-top:  2rem; /* Only affects this specific section */
+}
+
+#wordcloud-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#map-Lille-plus {
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#map-Lille-plus img {
+  border-radius: 12px;
+}
+
+
+
+
 
 
 
@@ -670,11 +713,9 @@ footer {
 /* Additional CSS for current.html - Add these to your existing website.css file */
 
 
-#top-tech-journey-page, #top-background-page, #top-about-page  {
-  margin-bottom: 3rem;
-}
 
-/* Styling and colours for background page */
+
+
 #top-background-page .text-plus-image {
   background-color: #8a7e4d;
 }
@@ -683,7 +724,7 @@ footer {
   background-color: #b3a76e;
 }
 
-/* Styling and colours for about page */
+
 #top-about-page .text-plus-image {
   background-color: #c79a4a;
 }
@@ -693,42 +734,84 @@ footer {
 }
 
 
-
-
-
-#tech-journey-page .info-block p ul {
-  text-align: left;  /* Aligns text to the left */
+.info-row-current, .info-row-background, .info-row-about  {
+  margin-top: 3rem;
 }
 
-#tech-journey-page .info-block .skills-list li {
-  text-align: left;  /* Aligns text to the left */
+
+.info-row-current .info-block p ul, .info-row-background .info-block p ul, .info-row-about .info-block p ul  {
   color: #1c2c3b;
-}
-
-#tech-journey-page .info-section-skills p {
   text-align: left;  /* Aligns text to the left */
 }
-/* 
-#tech-journey-page .info-row {
-  display: flex;  
-  gap: 2rem;  
-}  */
 
-#tech-journey-page .info-row {
+.info-row-current .info-row, .info-row-background .info-row, .info-row-about .info-row {
   display: flex;
   align-items: stretch;
 }
 
-#tech-journey-page .info-section-transition,
-#tech-journey-page .info-section-skills {
+/* Each section takes up 50% of the width */
+.info-row-current .info-section-skills, .info-row-current .info-section-skills-list,
+.info-row-background .info-section-university-background, .info-row-background .info-section-freelance-profile, 
+.info-row-about .info-section-lille-brussels, .info-row-about .info-section-languages-sports {
   display: flex;
-  flex: 1 1 50%;  /* Each section takes up 50% of the width */
-  padding: 1rem;  /* Optional: adds padding inside each section */
+  flex: 1 1 50%;  
+  padding: 1rem;  
 }
 
-#tech-journey-page .info-block {
-  text-align: left;  /* Align text to the left inside each block */
+.info-row-current .info-block, .info-row-background .info-block {
+  text-align: left;  
 }
+
+.skills-list {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+}
+
+.skills-list li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* 
+.info-row-current .info-block .skills-list li {
+  text-align: left;  
+  color: #1c2c3b;
+}
+
+.info-row-current .info-section-skills p {
+  text-align: left;  
+} */
+
+/* 
+.info-row-current .info-row {
+  display: flex;  
+  gap: 2rem;  
+}  */
+
+
+/* Cards */
+
+.projects-row-current-1, .projects-row-current-2, 
+.projects-row-background-1, .projects-row-background-2,
+.projects-row-about-1, .projects-row-about-2 {
+  display: flex;
+  align-items: stretch; /* This makes all children equal height */
+  gap: 1rem;
+}
+
+.project-card {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+}
+
+.project-card .info-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 
 
 /* Bridge and Skills list inside info blocks */
@@ -746,40 +829,14 @@ footer {
   width: 300px;
 }
 
-
-
 #bridge, #presenting, #me-outside {
   padding-bottom: 2rem;
   padding-top: 2rem;
 }
 
-.skills-list {
-  margin: 0.5rem 0;
-  padding-left: 1.2rem;
-}
-
-.skills-list li {
-  margin-bottom: 0.5rem;
-}
 
 
-.projects-row {
-  display: flex;
-  align-items: stretch; /* This makes all children equal height */
-  gap: 1rem;
-}
 
-.project-card {
-  padding: 2rem;
-  flex: 1;
-  display: flex;
-}
-
-.project-card .info-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 
 /* GitHub link in section heading */
 .section-heading {

@@ -15,55 +15,81 @@
     </head>
   
     <body>
-        <main>
-            <div class="page-wrapper">
-                <header>
-                    <div class="navbar">
-                        <div class="navbar-container">
-                            <!-- Signature top left -->
-                            <div class="signature">
-                                <h1>Michael Markey</h1> 
-                            </div>
-                            <!-- Hamburger Button - hidden on larger screens -->
-                            <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="main-menu">
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                                <span class="bar"></span>
-                            </button>
-                            <!-- Menu Items -->
-                            <ul class="menu" id="main-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="current.html">Current</a></li>
-                                <li><a href="background.html">Background</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Get in Touch</a></li>
-                            </ul>
+        <div class="page-wrapper">
+            <header>
+                <div class="navbar">
+                    <div class="navbar-container">
+                        <!-- Signature top left -->
+                        <div class="signature">
+                            <h1>Michael Markey</h1> 
                         </div>
+                        <!-- Hamburger Button - hidden on larger screens -->
+                        <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="main-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </button>
+                        <!-- Menu Items -->
+                        <ul class="menu" id="main-menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="current.html">Current</a></li>
+                            <li><a href="background.html">Background</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Get in Touch</a></li>
+                        </ul>
                     </div>
-                </header>
-            <div class="page-wrapper">
-    
-
-            <!-- Contact section with a form to get in touch -->
-            <section id="contact">
-                <div class="contact-wrapper">
-                <h2>Get in Touch</h2>
-                <!-- Method for Javascript -->
-                <form class="contact-form" action="#" method="post">
-                    <!-- Name -->
-                    <label for="name" class="visually-hidden">Name</label>
-                    <input id="name" type="text" name="name" placeholder="Your Name" required>
-                    <!-- Email -->
-                    <label for="email" class="visually-hidden">Email</label>
-                    <input id="email" type="email" name="email" placeholder="Your Email" required>
-                    <!-- Message Box -->
-                    <label for="message" class="visually-hidden">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    <!-- Submit button -->
-                    <button type="submit">Send</button>
-                </form>
                 </div>
-            </section>
-        </main>
+            </header>
+        
+    
+            <main>
+                <!-- Contact section with a form to get in touch -->
+                <section id="contact">
+                    <div class="contact-wrapper">
+                    <h2>Get in Touch</h2>
+                    <!-- Method for Javascript -->
+                    <form class="contact-form" action="#" method="post">
+                        <!-- Name -->
+                        <label for="name" class="visually-hidden">Name</label>
+                        <input id="name" type="text" name="name" placeholder="Your Name" required>
+                        <!-- Email -->
+                        <label for="email" class="visually-hidden">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Your Email" required>
+                        <!-- Message Box -->
+                        <label for="message" class="visually-hidden">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <!-- Submit button -->
+                        <button type="submit">Send</button>
+                    </form>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="footer-container">
+                  <div class="footer-links">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="background.html">Background</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Get in Touch</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-socials">
+                    <a href="https://linkedin.com/in/michael-markey" target="_blank" aria-label="LinkedIn">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/michaelmarkey" target="_blank" aria-label="GitHub">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                  <div class="footer-copy">
+                    <p>&copy; 2025 Michael Markey. All rights reserved.</p>
+                  </div>
+                </div>
+            </footer>
+
+            <script src="website.js"></script>
+        </div> <!-- Close Page wrapper -->
     </body>
 </html>
