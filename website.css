@@ -237,10 +237,22 @@ a:hover {
   width: 100%;
   max-width: 300px;
   height: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#map-Lille-plus {
+  width: auto;
+  height: auto;
   border-radius: 12px;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
+
+#map-Lille-plus img {
+  border-radius: 12px;
+}
+
 
 .text-plus-image .illustration {
   /* prevent flex from squishing the box */
@@ -273,11 +285,24 @@ a:hover {
   box-sizing: border-box;
 }
 
-.text-plus-image.experience-section,
+.text-plus-image.experience-section {
+  background-color: #8a7e4d;
+}
+
 .info-section-where_ive_been .info-block,
 .info-section-where_im_going .info-block {
-  background-color: #877e6b;
+  background-color: #b3a76e
 }
+
+.text-plus-image.personal-section {
+  background-color: #c79a4a;
+}
+
+#where-ive-lived .info-block,
+#what-i-like-to-do .info-block {
+  background-color: #e6bf75;
+}
+
 
 .info-section-transition, .info-section-current_projects, 
 .info-section-where_ive_been, .info-section-where_im_going {
@@ -376,8 +401,8 @@ a:hover {
 /* Footer with quick links, socials and copyright */
 footer {
   text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 2rem;
+  /* padding: 2rem 1rem;
+  margin-top: 2rem; */
   background: none;
   color: #333;
 }
@@ -645,10 +670,31 @@ footer {
 /* Additional CSS for current.html - Add these to your existing website.css file */
 
 
-#top-tech-journey-page {
+#top-tech-journey-page, #top-background-page, #top-about-page  {
   margin-bottom: 3rem;
-
 }
+
+/* Styling and colours for background page */
+#top-background-page .text-plus-image {
+  background-color: #8a7e4d;
+}
+
+#university-background .info-block, #freelance-profile .info-block, #research .info-block, #teaching .info-block, #projects .info-block, #public-speaking .info-block {
+  background-color: #b3a76e;
+}
+
+/* Styling and colours for about page */
+#top-about-page .text-plus-image {
+  background-color: #c79a4a;
+}
+
+#life-in-lille .info-block, #life-in-brussels .info-block, #literature .info-block, #trips .info-block, #djing .info-block, #juggling .info-block {
+  background-color: #e6bf75;
+}
+
+
+
+
 
 #tech-journey-page .info-block p ul {
   text-align: left;  /* Aligns text to the left */
@@ -684,22 +730,25 @@ footer {
   text-align: left;  /* Align text to the left inside each block */
 }
 
-/* Active menu link style */
-.menu a.active {
-  font-weight: 600;
-  border-bottom: 2px solid currentColor;
-}
 
 /* Bridge and Skills list inside info blocks */
 
-#bridge img{
+#bridge img, #presenting img {
   border-radius: 4px;
   border: #ffffff;
   border: 5px solid #ffffff; 
   height: 300px;
 }
 
-#bridge {
+#me-outside img {
+  border-radius: 4px;
+  height: 300px;
+  width: 300px;
+}
+
+
+
+#bridge, #presenting, #me-outside {
   padding-bottom: 2rem;
   padding-top: 2rem;
 }

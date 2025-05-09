@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Explore the professional journey, current projects, and future ambitions of Michael Markey.">
-    <title>Michael Markey | Tech Journey & Portfolio</title>
-    <link rel="stylesheet" href="website.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
-  </head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Explore the professional journey, current projects, and future ambitions of Michael Markey.">
+        <title>Michael Markey | Tech Journey & Portfolio</title>
+        <link rel="stylesheet" href="website.css">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
   
-  <body>
-    <div class="page-wrapper">
-      <header>
-        <div class="navbar">
-          <div class="navbar-container">
-            <!-- Signature top left -->
-            <div class="signature">
-              <h1>Michael Markey</h1> 
-            </div>
-            <!-- Hamburger Button - hidden on larger screens -->
-            <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="main-menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-            <!-- Menu Items -->
-            <ul class="menu" id="main-menu">
-              <li><a href="current.html">Current</a></li>
-              <li><a href="background.html">Background</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Get in Touch</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
+    <body>
+        <main>
+            <div class="page-wrapper">
+                <header>
+                    <div class="navbar">
+                        <div class="navbar-container">
+                            <!-- Signature top left -->
+                            <div class="signature">
+                                <h1>Michael Markey</h1> 
+                            </div>
+                            <!-- Hamburger Button - hidden on larger screens -->
+                            <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" aria-controls="main-menu">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </button>
+                            <!-- Menu Items -->
+                            <ul class="menu" id="main-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="current.html">Current</a></li>
+                                <li><a href="background.html">Background</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Get in Touch</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+            <div class="page-wrapper">
+    
+
+            <!-- Contact section with a form to get in touch -->
+            <section id="contact">
+                <div class="contact-wrapper">
+                <h2>Get in Touch</h2>
+                <!-- Method for Javascript -->
+                <form class="contact-form" action="#" method="post">
+                    <!-- Name -->
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input id="name" type="text" name="name" placeholder="Your Name" required>
+                    <!-- Email -->
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input id="email" type="email" name="email" placeholder="Your Email" required>
+                    <!-- Message Box -->
+                    <label for="message" class="visually-hidden">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <!-- Submit button -->
+                    <button type="submit">Send</button>
+                </form>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

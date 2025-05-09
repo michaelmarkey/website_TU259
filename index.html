@@ -31,6 +31,7 @@
             </button>
             <!-- Menu Items -->
             <ul class="menu" id="main-menu">
+              <li><a href="home.html">Home</a></li>
               <li><a href="current.html">Current</a></li>
               <li><a href="background.html">Background</a></li>
               <li><a href="about.html">About</a></li>
@@ -114,39 +115,42 @@
           </section>
         </div>
 
-        <!-- Same layout as top section - text plus image - but different padding top and bottom
-        <section class="text-plus-image experience-section">
-          <div class="description" id="over-the-years">
-            <h1>Where I've been and what I'm into</h1>
-            <p>I detail here the places I've lived in and my intersts</p>
+        <!-- Same layout as top section - text plus image - but different padding top and bottom -->
+        <section class="text-plus-image personal-section">
+          <div class="description" id="lived-and-do">
+            <h1>Where I've lived and what I like to do</h1>
+            <p>A little bit about Lille and Brussels, along with some of my hobbies</p>
           </div>
-          <div class="illustration" id="wordcloud-image">
-            <img src="where-ive-lived.png" alt="Wordcloud representing professional experience">
+          <div class="illustration" id="map-Lille-plus">
+            <img src="Lille.png" alt="Map of Northern Europe with a pin on Lille">
           </div>      
-        </section> -->
-
-
-        <!-- Contact section with a form to get in touch -->
-        <section id="contact">
-          <div class="contact-wrapper">
-            <h2>Get in Touch</h2>
-            <!-- Method for Javascript -->
-            <form class="contact-form" action="#" method="post">
-              <!-- Name -->
-              <label for="name" class="visually-hidden">Name</label>
-              <input id="name" type="text" name="name" placeholder="Your Name" required>
-              <!-- Email -->
-              <label for="email" class="visually-hidden">Email</label>
-              <input id="email" type="email" name="email" placeholder="Your Email" required>
-              <!-- Message Box -->
-              <label for="message" class="visually-hidden">Message</label>
-              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-              <!-- Submit button -->
-              <button type="submit">Send</button>
-            </form>
-          </div>
         </section>
-      </main>
+        
+        <!-- Same as before - section with two text boxes, this time about my professional experience -->
+        <div class="info-row">
+          <!-- First part of the row - first column on smaller screens -->
+          <section class="info-section-where_ive_been" id="where-ive-lived">
+            <div class="info-block">
+              <h2>Lille - Brussels</h2>
+              <p>I began my adult life in Lille, France, teaching English while completing my PhD in Language Sciences. 
+                Over two decades, I advanced to senior lecturer, coordinated programs, and led research. 
+                In 2023, I moved to Brussels, shifting to freelance language consulting and reigniting a long-standing interest in technology.</p>
+              <span class="learn-more-tag">Learn more</span>
+            </div>
+          </section>
+          <!-- Second part of the row or second column on smaller screens -->
+          <section class="info-section-where_im_going" id="what-i-like-to-do">
+            <div class="info-block">
+              <h2>A few of the things I like to do</h2>
+              <p>I love learning languages and exploring new cultures, which has fueled my travels and work abroad. 
+                In my downtime, I enjoy playing golf, reading, and experimenting with low-code tools. 
+                I also get real satisfaction from sharing ideas —whether it’s thoughtful writing, engaging talks, or intuitive design.</p>
+              <span class="learn-more-tag">Learn more</span>
+            </div>
+          </section>
+        </div>
+
+        
 
       <footer>
         <div class="footer-container">
@@ -156,6 +160,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="current.html">Current</a></li>
               <li><a href="background.html">Background</a></li>
+              <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Get in Touch</a></li>
             </ul>
           </div>
