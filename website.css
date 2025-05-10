@@ -256,6 +256,13 @@ a:hover {
 } 
 
 .text-plus-image .illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.text-plus-image .illustration {
   /* prevent flex from squishing the box */
   flex-shrink: 0;
   /* let its width be as big as its content, not 100% of the row */
@@ -280,13 +287,17 @@ a:hover {
 
 /* Info row */
 
+
 .info-row {
   display: flex;
+  align-items: stretch;
   flex-wrap: wrap;
   flex-direction: column; /* Stack by default */
   width: 100%;
   box-sizing: border-box;
+  min-height: 300px;
 }
+
 
 
 .info-row, .info-row-current, .info-row-background, .info-row-about  {
@@ -304,6 +315,33 @@ a:hover {
   align-items: stretch;
 }
 
+.info-section-transition, 
+.info-section-current_projects,
+.info-section-academia, 
+.info-section-freelance-skills,
+.info-section-where-ive-lived, 
+.info-section-what-i-like-to-do {
+  height: 100%; /* Take full height of parent */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack content vertically */
+}
+
+.info-section-skills-list .info-block .skills-list {
+  padding-bottom: 0.3rem;
+}
+
+
+.info-block {
+  height: 100%; /* Take full height of parent */
+  display: flex;
+  flex-direction: column;
+}
+
+.text-plus-image.experience-section,
+.text-plus-image.personal-section {
+  min-height: 400px;
+}
+
 /* Each section takes up 50% of the width */
 .info-row .info-section-transition, .info-row .info-section-current_projects,
 .info-row .info-section-academia, .info-row .info-section-freelance-skills,
@@ -314,6 +352,11 @@ a:hover {
   display: flex;
   flex: 1 1 50%;  
   padding: 1rem;  
+}
+
+.info-section-languages-sports .info-block a {
+  font-size: inherit;
+  line-height: inherit;
 }
 
 
@@ -331,6 +374,7 @@ a:hover {
 
 .text-plus-image.experience-section {
   background-color: #8a7e4d;
+  
 }
 
 .info-section-academia .info-block,
@@ -468,24 +512,36 @@ a:hover {
   border-radius: 12px;
 }
 
+#wordcloud-image {
+  width: 100%;
+  max-width: 450px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
 #wordcloud-image img {
   width: 100%;
-  max-width: 300px;
   height: auto;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  display: block; /* Removes any inline spacing */
+  border-radius: 20px;
+  margin: 0 auto; /* Center the image */
 }
 
 #map-Lille-plus {
-  width: auto;
-  height: auto;
-  border-radius: 12px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 450px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 #map-Lille-plus img {
-  border-radius: 12px;
+  width: 100%;
+  height: 300px;
+  display: block; /* Removes any inline spacing */
+  border-radius: 20px;
+  margin: 0 auto; /* Center the image */
 }
 
 
@@ -629,7 +685,6 @@ footer {
 .section-heading {
   text-align: center;
   margin: 2rem;
-  padding-top: 2rem;
 }
 
 .section-heading h2 {
@@ -700,6 +755,15 @@ footer {
     margin-top: 2rem;
   }
 
+  .info-row {
+    min-height: auto; /* Let content determine height on mobile */
+  }
+  
+  .text-plus-image.experience-section,
+  .text-plus-image.personal-section {
+    min-height: auto;
+  }
+
   
 }
 
@@ -744,6 +808,15 @@ footer {
     margin: 0;        /* remove weird top margin */
     padding: 0;
     object-fit: contain;         /* just in case */
+  }
+
+  .info-row {
+    min-height: auto; /* Let content determine height on mobile */
+  }
+  
+  .text-plus-image.experience-section,
+  .text-plus-image.personal-section {
+    min-height: auto;
   }
 
 }
@@ -839,6 +912,14 @@ footer {
   #wordcloud-image img {
     padding-top: 1rem;
     padding-bottom: 2rem;
+  }
+
+  #map-Lille-plus {
+    max-width: 100%;
+  }
+  
+  #map-Lille-plus img {
+    max-width: 450px; /* Adjust based on your preference */
   }
   
   /* Two-column layout */
