@@ -71,11 +71,12 @@ a:hover {
   display: inline-block;
   color: #ffffff;
   font-weight: 800;
+  font-size: 1.1rem;
   cursor: pointer;
   margin-top: 0rem;
   text-decoration: none;
   transition: color 0.3s ease;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .learn-more-tag a {
@@ -350,11 +351,18 @@ a:hover {
 }
 
 
-.info-block p, .info-block h2 {
+.info-block p {
   margin: 0;
   padding: 0;
   text-align: left; /* Aligns text to the left */
 }
+
+.info-block h2 {
+  margin-bottom: 1rem;
+  padding: 0;
+  text-align: left; /* Aligns text to the left */
+}
+
 
 .text-plus-image.experience-section,
 .text-plus-image.personal-section {
@@ -437,7 +445,7 @@ a:hover {
   background-color: #A1B0A4;
   border-radius: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 2rem 1rem; /* Padding inside the border */
+  padding: 2rem; /* Padding inside the border */
   width : 100%; 
   box-sizing: border-box;
   word-wrap: break-word;
@@ -447,7 +455,7 @@ a:hover {
 .info-block h2 {
   color: #ffffff;
   font-size: 1.3rem; 
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .info-block p {
@@ -493,6 +501,7 @@ a:hover {
   flex-direction: column;
   align-items: stretch; /* This makes all children equal height */
   gap: 1rem;
+  text-align: center;
 }
 
 .project-card {
@@ -507,6 +516,10 @@ a:hover {
   justify-content: space-between;
 }
 
+.project-card .info-block p {
+  text-align: center;
+}
+
 /* Projects row spacing */
 .projects-row {
   margin-bottom: 1.5rem;
@@ -519,7 +532,7 @@ a:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 
@@ -565,6 +578,11 @@ a:hover {
 
 
 /* Contact form with name, email, message and send button */
+
+#contact {
+  margin: 3rem 0;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -574,9 +592,9 @@ a:hover {
 }
 
 .contact-wrapper {
-  max-width: 600px;    /* ✅ keeps it from stretching too far */
-  margin: 0 auto;       /* ✅ centers it horizontally */
-  padding: 0 2rem;      /* ✅ adds left/right space on all screens */
+  max-width: 600px;    
+  margin: 0 auto;       
+  padding: 0 2rem;      
   box-sizing: border-box;
   padding-bottom: 2rem;
   
@@ -957,7 +975,7 @@ footer {
     display: flex;
     flex-direction: row; /* Side by side */
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   .info-block {
@@ -979,9 +997,13 @@ footer {
   
   /* ==== CONTACT SECTION ==== */
   #contact {
-    padding: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
     width: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 
   .contact-form input,
