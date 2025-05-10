@@ -31,14 +31,14 @@ h1 {
 
 h2 {
   font-family: 'Merriweather';
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.1;
 }
 
 h3 {
   font-family: 'Merriweather';
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.1;
 }
@@ -75,12 +75,21 @@ a:hover {
   margin-top: 0rem;
   text-decoration: none;
   transition: color 0.3s ease;
+  margin-top: 0.5rem;
 }
 
+.learn-more-tag a {
+  color: #ffffff;
+}
 .learn-more-tag:hover {
   color: #388E3C;
   text-decoration: underline;
 }
+
+
+
+
+
 
 /* Navigation */
 
@@ -296,7 +305,9 @@ a:hover {
   width: 100%;
   box-sizing: border-box;
   min-height: 300px;
+  
 }
+
 
 
 
@@ -324,6 +335,7 @@ a:hover {
   height: 100%; /* Take full height of parent */
   display: flex; /* Enable flexbox */
   flex-direction: column; /* Stack content vertically */
+  
 }
 
 .info-section-skills-list .info-block .skills-list {
@@ -335,6 +347,13 @@ a:hover {
   height: 100%; /* Take full height of parent */
   display: flex;
   flex-direction: column;
+}
+
+
+.info-block p, .info-block h2 {
+  margin: 0;
+  padding: 0;
+  text-align: left; /* Aligns text to the left */
 }
 
 .text-plus-image.experience-section,
@@ -360,9 +379,9 @@ a:hover {
 }
 
 
-.info-row .info-block {
+/* .info-row .info-block {
   text-align: center;
-}
+} */
 
 .info-row-current .info-block, .info-row-background .info-block, .info-row-about .info-block {
   text-align: left;  
@@ -414,11 +433,11 @@ a:hover {
 
 .info-block {
   margin: 0; 
-  text-align: center;
+  /* text-align: center; */
   background-color: #A1B0A4;
   border-radius: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 2rem; /* Padding inside the border */
+  padding: 2rem 1rem; /* Padding inside the border */
   width : 100%; 
   box-sizing: border-box;
   word-wrap: break-word;
@@ -427,7 +446,7 @@ a:hover {
 
 .info-block h2 {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.3rem; 
   margin-bottom: 1rem;
 }
 
