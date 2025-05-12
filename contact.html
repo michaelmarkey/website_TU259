@@ -48,19 +48,19 @@
                     <div class="contact-wrapper">
                     <h2>Get in Touch</h2>
                     <p>If you’d like to say hello, ask a question, or just connect, feel free to send me a message using the form below.</p>
-                    <!-- Method for Javascript -->
-                    <form class="contact-form" action="#" method="post">
-                        <!-- Name -->
-                        <label for="name" class="visually-hidden">Name</label>
-                        <input id="name" type="text" name="name" placeholder="Your Name" required>
-                        <!-- Email -->
-                        <label for="email" class="visually-hidden">Email</label>
-                        <input id="email" type="email" name="email" placeholder="Your Email" required>
-                        <!-- Message Box -->
-                        <label for="message" class="visually-hidden">Message</label>
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        <!-- Submit button -->
-                        <button type="submit">Send</button>
+                    <!-- Updated form action to Formspree -->
+                    <form class="contact-form" action="https://formspree.io/f/xovdknvg" method="POST">
+                      <!-- Name -->
+                      <label for="name" class="visually-hidden">Name</label>
+                      <input id="name" type="text" name="name" placeholder="Your Name" required>
+                      <!-- Email -->
+                      <label for="email" class="visually-hidden">Email</label>
+                      <input id="email" type="email" name="_replyto" placeholder="Your Email" required>
+                      <!-- Message Box -->
+                      <label for="message" class="visually-hidden">Message</label>
+                      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                      <!-- Submit button -->
+                      <button type="submit">Send</button>
                     </form>
                     
                     <!-- Alternative Contact Option -->
