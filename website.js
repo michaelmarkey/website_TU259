@@ -1,3 +1,5 @@
+/* Hamburger Menu Toggle Script */
+
 const toggle = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 
@@ -23,3 +25,20 @@ window.addEventListener('resize', () => {
     toggle.setAttribute('aria-expanded', 'false');
   }
 });
+
+/* Copy mail to clipboard */
+
+function copyEmail() {
+  const email = document.getElementById('email').textContent;
+
+  // Make sure the user triggers the clipboard action directly
+  navigator.clipboard.writeText(email)
+    .then(() => {
+      console.log('Email copied to clipboard!');
+      alert('Email copied to clipboard!');
+    })
+    .catch(err => {
+      console.error('Failed to copy email:', err);
+      alert('Failed to copy email. Make sure the page has focus and is properly loaded.');
+    });
+}
